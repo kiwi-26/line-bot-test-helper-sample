@@ -2,6 +2,7 @@
 
 Using Laravel framework.
 
+[MessageHandler](https://github.com/kiwi-26/line-bot-test-helper-sample/blob/master/app/MessageHandler.php) test code is [here](https://github.com/kiwi-26/line-bot-test-helper-sample/blob/master/tests/Feature/MessageHandlerTest.php).
 
 ## License
 
