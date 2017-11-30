@@ -13,4 +13,4 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('/api', 'MessageController@post');
+Route::post('/', 'MessageController@post');
