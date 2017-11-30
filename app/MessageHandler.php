@@ -20,7 +20,14 @@ class MessageHandler
     function handle() {
         foreach ($this->events as $event) {
             if ($event instanceof TextMessage) {
-                $this->bot->replyText($event->getReplyToken(), 'reply text');
+                switch ($event) {
+                    case 'hello':
+                        $this->bot->replyText($event->getReplyToken(), 'Hello, my friend!');
+                        break;
+                    default:
+                        $this->bot->replyText($event->getReplyToken(), 'reply text');
+                        break;
+                }
             }
         }
     }
